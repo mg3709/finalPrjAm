@@ -2,7 +2,6 @@ package com.kh.finalPrjAm.controller;
 
 import com.kh.finalPrjAm.constant.ItemSellStatus;
 import com.kh.finalPrjAm.dto.ItemDTO;
-import com.kh.finalPrjAm.entity.Item;
 import com.kh.finalPrjAm.service.ItemService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

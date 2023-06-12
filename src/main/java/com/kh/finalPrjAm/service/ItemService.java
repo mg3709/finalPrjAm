@@ -23,7 +23,6 @@ public class ItemService {
 
     //상품 생성
     public boolean createItem(String name, int price, String detail, ItemSellStatus status, int stock){
-
         Item item = new Item();
         item.setItemNm(name);
         item.setPrice(price);
@@ -49,4 +48,5 @@ public class ItemService {
         log.info("조회된 상품 이름 : " + itemDTOS);
         return itemDTOS;
     }
+
 }

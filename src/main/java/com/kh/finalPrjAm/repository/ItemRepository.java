@@ -14,7 +14,7 @@ import java.util.List;
 @Repository
 public interface ItemRepository extends JpaRepository<Item, Long> {
 
-    List<Item> findByItemNm(String itemNm);
+//    List<Item> findByItemNm(String itemNm);
 
     // or 조건 처리하기
     List<Item> findByItemNmOrItemDetail(String itemNm, String itemDetail);
