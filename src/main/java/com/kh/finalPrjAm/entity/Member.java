@@ -1,5 +1,7 @@
 package com.kh.finalPrjAm.entity;
 
+import com.kh.finalPrjAm.constant.Authority;
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -18,5 +20,19 @@ public class Member {
     private String pwd;
     @Column(unique = true)
     private String email;
-    private LocalDateTime joinTime;
+
+//    private LocalDateTime dateTime;
+
+    @Enumerated(EnumType.STRING)
+    private Authority authority;
+
+    @Builder
+    public Member(String user, String email, String pwd, String name, Authority authority){
+        this.userId = user;
+        this.email = email;
+        this.pwd = pwd;
+        this.name = name;
+        this.authority = authority;
+    }
+
 }

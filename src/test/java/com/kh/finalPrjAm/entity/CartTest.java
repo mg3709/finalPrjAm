@@ -13,7 +13,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityNotFoundException;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
-import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -39,7 +38,6 @@ class CartTest {
         member.setPwd("sphb8250");
         member.setName("곰돌이사육사");
         member.setEmail("jks2024@naver.com");
-        member.setJoinTime(LocalDateTime.now());
 
         return member;
     }
